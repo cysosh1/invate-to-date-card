@@ -13,12 +13,10 @@ const createHeart = () => {
   // ограничиваем появление в пределах экрана
   heart.style.left = Math.random() * 90 + 'vw';
   heart.style.top = Math.random() * 90 + 'vh';
-  heart.style.fontSize = Math.random() * 30 + 10 + 'px';
-  heart.style.animationDuration = (3 + Math.random() * 3) + 's';
-
+  
   document.body.appendChild(heart);
 
-  setTimeout(() => heart.remove(), 6000);
+  setTimeout(() => heart.remove(), 4000);
 };
 
 setInterval(createHeart, 700);
